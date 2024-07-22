@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: palevioletred;
+    color: blueviolet;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: peachpuff;
+    margin-top: 20px;
+}
+
+h2 {
+    color: navajowhite;
+    margin-bottom: 10px;
+}
+
+/* Form Styles */
+form {
+    background-color:skyblue;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px papayawhip;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+button {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid yellowgreen;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: orange;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Playlist and Song Styles */
+.playlist {
+    background-color: skyblue;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px pink;
+    margin-bottom: 15px;
+}
+
+.playlist h3 {
+    margin: 0 0 10px;
+    color: #007bff;
+}
+
+.playlist button {
+    background-color: #28a745;
+    color: purple;
+    border: none;
+    cursor: pointer;
+}
+
+.playlist button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    input[type="text"],
+    button {
+        width: calc(100% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
